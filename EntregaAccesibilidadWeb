@@ -1,0 +1,158 @@
+<!-- 
+En este archivo haremos mas accesibles algunos elementos recurrentes de la página web: https://www.eldia.com/
+Esta página posee gran cantidad de imágenes sin atributos que aclaren su contenido y la hagan mas
+accesible, además de gran cantidad de enlaces de redirección, cuyo significado depende del contexto
+y puede resultar confuso al usuario, entre otros ejemplos más.
+
+Dado que al analizarla con validadores arroja miles de faltas para alcanzar
+una accesibilidad óptima, analizaremos como solucionar los problemas mas recurrentes en el sitio.
+
+-->
+
+<!-- 
+    Primero mostraremos un ejemplo de como podría alterarse el panel lateral de la izquierda de la página, para mejorar la accesibilidad
+    de los mismos en relación al contexto. Para esto, visualizamos el html de la misma y extraemos el código de uno de sus elementos, el de la sección de deportes.
+
+    Para mejorar la accesibilidad en esta situación, alcanza con editar el texto contenido en el elemento.
+-->
+
+<!-- Código original -->
+<li data-link="/seccion/deportes" class="tab-link-prev" href="#tab-seccion-deportes">Deportes</li>
+
+<!--Código mas accesible-->
+<li data-link="/seccion/deportes" class="tab-link-prev" href="#tab-seccion-deportes">Ver sección de deportes</li>
+
+
+
+<!--
+    Luego, podemos observar que en la región inferior de la página, hay unos botones que redirigen
+    a las redes sociales del diario, estas no poseen un texto alternativo que aclare para qué 
+    sirven estos mismos
+
+-->
+
+<!-- Código original -->
+<ul class="social_profiles">
+    <li><a href="http://www.facebook.com/eldialp" class="facebook sprite sprite-facebook-f287a7622f2bfe1a15852eca88498e4a"></a>
+    </li>
+    <li style="width:35px;background:#fff;height:35px;border-radius:100%"><a href="https://api.whatsapp.com/send?phone=5492214779896"><img style="width:23px;margin-right:5px;margin-bottom:5px" src="/img/header/whatsapp-logo.png"></a>
+    </li>
+    <li><a href="http://www.twitter.com/eldialp" class="twitter sprite sprite-twitter-3596b49ebfc9cc3c9d175d478d282e5f"></a>
+    </li>
+    <li><a href="https://www.instagram.com/eldialp/" class="instagram sprite sprite-instagram-eb78df5e8edd489e929465d022fa99ef"></a>
+    </li>     
+</ul>
+
+<!--Código mas accesible -->
+<!--    En este caso primero haremos uso del atributo 'title' para poder aclarar el contenido del link -->
+
+<ul class="social_profiles">
+    <li><a href="http://www.facebook.com/eldialp" title="Visitar la página de Facebook del diario" class="facebook sprite sprite-facebook-f287a7622f2bfe1a15852eca88498e4a"></a>
+    </li>
+    <!-- (...) -->     
+</ul>
+<!-- Además podriamos agregar una Access Key, para que el usuario por ejemplo al apretar ctrl + F,
+pueda ir directamente al facebook de la página -->
+
+<ul class="social_profiles">
+    <li><a href="http://www.facebook.com/eldialp" accesskey="F" title="Visitar la página de Facebook del diario" class="facebook sprite sprite-facebook-f287a7622f2bfe1a15852eca88498e4a"></a>
+    </li>
+    <!-- (...) -->     
+</ul>
+
+
+
+<!-- 
+    Ahora, analizando las imágenes del sitio, podemos ver ninguna aclara textualmente su contenido o posee
+alguna forma de diferir a que trata la misma para el caso en qué el usuario se trate de una persona no vidente 
+--> 
+
+<!-- Código original (Acortado ya que posee muchas referencias a imagenes innecesarias para
+    el ejemplo de refactorización que haremos a continuación)-->
+<img class="lazyautosizes lazyloaded" data-sizes="auto" data-src="https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=320&amp;ch=200" 
+    data-srcset="https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=320&amp;ch=200 320w,              
+    https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=480&amp;ch=300 480w,                                       
+    https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=1200&amp;ch=750 1200w" 
+    src="https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=320&amp;ch=200">
+
+<!--Código mas accesible -->
+<!-- En este caso añadiremos el atributo 'alt' de la clase img, que permite añadir
+    una descripción de la misma como una forma alternativa de entender este contenido. --> 
+<img class="lazyautosizes lazyloaded" alt="Imagen sobre la alumna qué participó del proyecto de donación" data-sizes="auto" data-src="https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=320&amp;ch=200" 
+    data-srcset="https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=320&amp;ch=200 320w,              
+    https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=480&amp;ch=300 480w,                                       
+    https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=1200&amp;ch=750 1200w" 
+    src="https://cdn1.eldia.com/112019/1573053675605.jpg?&amp;cw=320&amp;ch=200">
+
+
+<!--
+    Ahora, al ingresar a algunos artículos, podemos ver que los mismos contienen videos.
+    Por empezar, para hacer este recurso mas accesible, sería ideal que los videos posean
+    subtitulos y una transcripción de los diálogos.
+
+    Ademas, el problema con la clase 'video' de html, es que el panel de controles (play,pausa)
+    no es accesible por teclado en la mayoría de los browsers.
+ -->
+
+ <!-- Para añadir subtitulos al texto, podemos crear un archivo WEBVVT, con una estructura
+    como la siguiente:
+        1
+        00:00:22.230 -> 00:00:24.606    (Rango en el que vá el subtitulo)
+        Hola! Me presento, soy la representante de la asociación.   (Este es el primer extracto)
+
+        2
+        00:00:30.739 -> 00:00:34.074
+        Vamos a conocer la sede de La Plata.    (Este es el segundo extracto)
+
+        
+    Para añadir luego este archivo de subtitulos, utilizamos el atributo < track > dentro de
+    los controles del video, añadiendo esta linea en nuestro código: (ejemplo)
+-->
+
+<track kind="Subtitulos" src="subtitulos_en.vtt" srclang="es">
+
+<!-- Esto ultimo incluso ayuda a los buscadores a mostrar tu contenido de forma mas
+directa en las busquedas   -->
+
+<!-- Para página de forms -->
+
+<!-- 
+dentro del campo form, se puede utilizar el tag fieldset. Este tag permite declarar a su vez
+un atributo <legend> que ayude a aclarar el contexto al navegar por un form. Al utilizar un
+lector de pantalla, este leerá la leyenda antes de leer el titulo de cada campo.
+ejemplo: 
+<form>
+  <fieldset>
+    <legend>Raza del personaje</legend>
+    <p>
+      <input type="radio" name="raza" id="raza_1" value="humano" />
+      <label for="raza_1">Humano</label>
+    </p>
+    <p>
+      <input type="radio" name="raza" id="raza_2" value="elfo" />
+      <label for="raza_2">Elfo</label>
+    </p>
+    <fieldset>
+<form>
+    lee raza humano y raza elfo.
+
+-->
+
+<!-- 
+    En cuanto a tablas, es importante destacar los datos mas importantes de las mismas.
+    el atributo <td> se utiliza para datos, mientras el atributo <th> se 
+    utiliza para las celdas header de la tabla. Por ejemplo: <th scope="row"> 33333333 </th>
+    <td> minombre</td> <td> miape</td> 
+    el atributo th scope= "co1" sirve para resaltar los headers, por ejemplo de la siguiente forma:
+    <th scope="col">Dni</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+
+    Al separar de esta forma, los lectores de pantalla leeran cada celda y sus headers correspondientes
+    al mismo tiempo.
+    Estas tecnicas ademas permiten cambiar el tamaño y los colores de las tablas, ademas de poder
+    mostrar informacion como listas en lugar de grillas.
+
+-->
+
+
