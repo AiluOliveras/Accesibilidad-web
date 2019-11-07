@@ -1,0 +1,21 @@
+La web a analizar es la siguiente:http://www.resinformatica.com.ar/LOGIN_ONLY/login-only/GlobalBluePoint-ERP.aspx
+Analizaremos concretamente la pestaña de login del sistema para demostrar que podriamos
+hacer una pestaña de formularios que sea accesible.
+
+En este caso los cambios realizados fueron los siguientes:
+1°) En varios casos hicimos uso del atributo alt para escribir un texto alternativo 
+para las imágenes.
+2°) Se añadieron descripciones de links de redirecciones.
+3°) Se agrandaron varias imágenes para que cumplan con el tamaño minimo recomendado por la wcag
+(16 px).
+4°) Corrección de textos alternativos que no describian claramente la operación que realizaba
+un determinado componente del html.
+5°) Se añadieron atributos 'keypress', para que puedan accederse a los elementos no solo usando el mouse, sino
+tambien utilizando el teclado.
+6°) Se aclaró el lenguaje de la pagina en el encabezado del html.
+
+En este caso al validar la página después de analizarla con la herramienta 'Simor',
+los errores que surgieron son:
+-Regla 83 de la wcag: los formularios deben tener id's que no se repitan en ningun otro formulario.
+En este caso, deberíamos ademas 
+-Regla 44: los links deben ser descriptivos.

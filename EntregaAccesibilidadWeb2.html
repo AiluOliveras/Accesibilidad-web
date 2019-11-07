@@ -1,0 +1,1036 @@
+<!-- Para página de forms -->
+
+<!-- 
+dentro del campo form, se puede utilizar el tag fieldset. Este tag permite declarar a su vez
+un atributo <legend> que ayude a aclarar el contexto al navegar por un form. Al utilizar un
+lector de pantalla, este leerá la leyenda antes de leer el titulo de cada campo.
+ejemplo: 
+<form>
+  <fieldset>
+    <legend>Raza del personaje</legend>
+    <p>
+      <input type="radio" name="raza" id="raza_1" value="humano" />
+      <label for="raza_1">Humano</label>
+    </p>
+    <p>
+      <input type="radio" name="raza" id="raza_2" value="elfo" />
+      <label for="raza_2">Elfo</label>
+    </p>
+    <fieldset>
+<form>
+    lee raza humano y raza elfo.
+
+-->
+
+<!-- 
+    En cuanto a tablas, es importante destacar los datos mas importantes de las mismas.
+    el atributo <td> se utiliza para datos, mientras el atributo <th> se 
+    utiliza para las celdas header de la tabla. Por ejemplo: <th scope="row"> 33333333 </th>
+    <td> minombre</td> <td> miape</td> 
+    el atributo th scope= "co1" sirve para resaltar los headers, por ejemplo de la siguiente forma:
+    <th scope="col">Dni</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+
+    Al separar de esta forma, los lectores de pantalla leeran cada celda y sus headers correspondientes
+    al mismo tiempo.
+    Estas tecnicas ademas permiten cambiar el tamaño y los colores de las tablas, ademas de poder
+    mostrar informacion como listas en lugar de grillas.
+
+-->
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Añado lenguaje de la página, con el atributo lang-->
+<html lang="es" xmlns="https://www.w3.org/1999/xhtml">
+<head id="headMain"> <meta name="robots"                property="robots"               content="index,follow" />              
+ <meta name="googlebot"             content="code" />              
+ <meta name="description"             content=""    />    
+ <meta name="title"                   content="Res Informática"     />    
+ <meta name="keywords"                content="Computacion, Informatica, Insumos, impresoras, camaras, dvr, accesorios, PC, La PLata, Notebook, Servicio Tecnico "     />    
+ <meta name="distribution"            content="global" />                            
+ <meta name="resource-type"           content="document" />                          
+ <meta name="Copyright"               content="GlobalBluePoint© 2019, ERP Framework for web development" />       
+ <meta name="rating"                  content="general" />                           
+ <meta name="author"                                                content="Designed by third parties with the GlobalBluePoint© ERP WEB Development Framework" />       
+ <meta http-equiv="Expires"                                         content="07 nov 2019 16:44:57 GMT"  /> 
+ <meta name="revisit-after"                                         content="3 days" />
+ <meta http-equiv="cache-control"                                   private, max-age=360 />                          
+ <meta http-equiv="Content-Type"                                    content="text/html; charset=UTF-8" />          
+
+<script src="http://www.resinformatica.com.ar/App_Scripts/website2.js" type="text/javascript"></script>  
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+<link href='http://www.resinformatica.com.ar/Temp/App_WebSite/App_CSS/rescss.css' rel='stylesheet' type='text/css'> 
+
+
+<link rel="icon" href="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/icon-res.ico" type="image/x-icon" />
+
+<title>
+	Res Informática
+</title></head>
+
+
+<body id="bodyMain">
+
+
+
+    <form name="frmWebMain" method="post" action="wfmWebSite2.aspx?QSWebSiteIIName=fda82f1b-29c9-4d65-ad13-8b2804d697be&amp;QSWebSiteIINameWSU=-1&amp;QSWebSiteIIPage=271c4655-b846-4e57-be71-2ee1f64fffe8&amp;QSWebSiteIIParameter=login-only&amp;QSWebSiteIIRequestIP=163.10.42.101&amp;QSWebSiteIIIsDesignMode=0&amp;QSWebSiteIIOriginalURL=http%3a%2f%2fwww.resinformatica.com.ar%2fLOGIN_ONLY%2flogin-only%2fGlobalBluePoint-ERP.aspx" id="frmWebMain">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE_KEY" id="__VIEWSTATE_KEY" value="7c86843e-7bcb-4d1f-994a-d962ede5d872" />
+<input type="hidden" name="__SESSION_KEY" id="__SESSION_KEY" value="51a75562-22aa-4f6a-937f-e2975d87a01c" />
+<input type="hidden" name="__VIEWSTATE" id="
+__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmWebMain'];
+if (!theForm) {
+    theForm = document.frmWebMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=0H5Dq4rIjTnB7ogYx5oSBdqCS7lrcjDRoSjIn8WwQv43lL-lK60J6kQTl78sMiM5ys-OE0F8eib4D-tjhH08UtDvfMM1&amp;t=636284525597151108" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=IUMCimD1IBPYK6F3huUvapmHez-cL0blfma0Bw_fgsayGKgtfUlfR3DEnTDc5BtwmuYiIsGAU-UIMtAl0Phnkt9HkOU_gMhs6U8xZM46BfXh2xCKH0Q13xtla9d3MH4r1htySI8H087Sq5C5eXz2mIV9BBI1&amp;t=3f4a792d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=aYolPbjfS5DBtXT4tsGmpLNOtIa6keiAHv2q150h6G9EH4aMbr_AOCKcYl41-1vNEkaAV42UpSdO92hu_Wo9KKgArskIYqU8rwFRSp6dfQW7aHBHcL2MFlq8yNfLQtUmegwEhVEIPR5nt8nNgKe_zhSW2R5-5iQ0MLJGEPlv4ERt7lhU0&amp;t=3f4a792d" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+_get_path:function() {
+ var p = this.get_path();
+ if (p) return p;
+ else return PageMethods._staticInstance.get_path();},
+wsNRW_ChangeItemIDSelected:function(guidWS_Id,intItemId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ChangeItemIDSelected',false,{guidWS_Id:guidWS_Id,intItemId:intItemId},succeededCallback,failedCallback,userContext); },
+wsNRW_Calculate:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Calculate',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_SendEMail:function(guidWS_Id,strDisplayName,strMailTO,strMailToCC,strMailToCCO,strSubject,strBody,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SendEMail',false,{guidWS_Id:guidWS_Id,strDisplayName:strDisplayName,strMailTO:strMailTO,strMailToCC:strMailToCC,strMailToCCO:strMailToCCO,strSubject:strSubject,strBody:strBody},succeededCallback,failedCallback,userContext); },
+wsNRW_SaveSaleOrder:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SaveSaleOrder',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_SetNewCustomer:function(guidWS_Id,pname,pcountry,pstate,paddress,pcity,pzip,pfiscalclass,ptaxnumbertype,ptaxnumber,pemail,pphone,pnickname,ppass1,ppass2,pcaptcha,pCaptchaOriginal,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SetNewCustomer',false,{guidWS_Id:guidWS_Id,pname:pname,pcountry:pcountry,pstate:pstate,paddress:paddress,pcity:pcity,pzip:pzip,pfiscalclass:pfiscalclass,ptaxnumbertype:ptaxnumbertype,ptaxnumber:ptaxnumber,pemail:pemail,pphone:pphone,pnickname:pnickname,ppass1:ppass1,ppass2:ppass2,pcaptcha:pcaptcha,pCaptchaOriginal:pCaptchaOriginal},succeededCallback,failedCallback,userContext); },
+wsNRW_SetNewContact:function(guidWS_Id,pname,pcountry,pstate,paddress,pcity,pzip,pemail,pphone,pbussiness,pMessage,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SetNewContact',false,{guidWS_Id:guidWS_Id,pname:pname,pcountry:pcountry,pstate:pstate,paddress:paddress,pcity:pcity,pzip:pzip,pemail:pemail,pphone:pphone,pbussiness:pbussiness,pMessage:pMessage},succeededCallback,failedCallback,userContext); },
+wsNRW_SetNewCRMTask:function(guidWS_Id,intBranchId,intProfileId,intLangId,intUserId,intTaskTypeID,intTaskStatusID,intTask_Priority,strTask_Subject,strTaskDescription,strTaskResolution,intCaseId,intSOH_Bra_Id,intSOH_Id,intCustId,intContactId,decTaskPrice,intCurrencyId,strEMailAddressAdditional,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SetNewCRMTask',false,{guidWS_Id:guidWS_Id,intBranchId:intBranchId,intProfileId:intProfileId,intLangId:intLangId,intUserId:intUserId,intTaskTypeID:intTaskTypeID,intTaskStatusID:intTaskStatusID,intTask_Priority:intTask_Priority,strTask_Subject:strTask_Subject,strTaskDescription:strTaskDescription,strTaskResolution:strTaskResolution,intCaseId:intCaseId,intSOH_Bra_Id:intSOH_Bra_Id,intSOH_Id:intSOH_Id,intCustId:intCustId,intContactId:intContactId,decTaskPrice:decTaskPrice,intCurrencyId:intCurrencyId,strEMailAddressAdditional:strEMailAddressAdditional},succeededCallback,failedCallback,userContext); },
+wsNRW_SetNewCRMFastTask:function(guidWS_Id,intTaskTypeID,intTaskStatusID,intTask_Priority,strTask_Subject,strTaskDescription,strEMailAddressAdditional,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SetNewCRMFastTask',false,{guidWS_Id:guidWS_Id,intTaskTypeID:intTaskTypeID,intTaskStatusID:intTaskStatusID,intTask_Priority:intTask_Priority,strTask_Subject:strTask_Subject,strTaskDescription:strTaskDescription,strEMailAddressAdditional:strEMailAddressAdditional},succeededCallback,failedCallback,userContext); },
+wsNRW_SetCRMTaskCompliance:function(guidWS_Id,intTaskID,strNote,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SetCRMTaskCompliance',false,{guidWS_Id:guidWS_Id,intTaskID:intTaskID,strNote:strNote},succeededCallback,failedCallback,userContext); },
+wsNRW_setNewCRMTaskNote:function(guidWS_Id,intUserId,intTaskID,strNote,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_setNewCRMTaskNote',false,{guidWS_Id:guidWS_Id,intUserId:intUserId,intTaskID:intTaskID,strNote:strNote},succeededCallback,failedCallback,userContext); },
+wsNRW_getURLHTML:function(guidWS_Id,strURL,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_getURLHTML',false,{guidWS_Id:guidWS_Id,strURL:strURL},succeededCallback,failedCallback,userContext); },
+wsNRW_getPageHTML:function(guidWS_Id,strWebSiteURL,strDelimiterTAG,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_getPageHTML',false,{guidWS_Id:guidWS_Id,strWebSiteURL:strWebSiteURL,strDelimiterTAG:strDelimiterTAG},succeededCallback,failedCallback,userContext); },
+wsNRW_CustomerGroup_AddRelations:function(guidWS_Id,intCustgId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_CustomerGroup_AddRelations',false,{guidWS_Id:guidWS_Id,intCustgId:intCustgId},succeededCallback,failedCallback,userContext); },
+wsNRW_Track_SetWSGuid:function(guidWS_Id,strGuid,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Track_SetWSGuid',false,{guidWS_Id:guidWS_Id,strGuid:strGuid},succeededCallback,failedCallback,userContext); },
+wsNRW_Track_SaveWSTracking:function(guidWS_Id,intActionType,intActionId,strActionText,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Track_SaveWSTracking',false,{guidWS_Id:guidWS_Id,intActionType:intActionType,intActionId:intActionId,strActionText:strActionText},succeededCallback,failedCallback,userContext); },
+wsNRW_Track_SaveWSDataStorage:function(guidWS_Id,intActionType,intActionId,strActionText,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Track_SaveWSDataStorage',false,{guidWS_Id:guidWS_Id,intActionType:intActionType,intActionId:intActionId,strActionText:strActionText},succeededCallback,failedCallback,userContext); },
+wsNRW_AddExtendedWarranty:function(guidWS_Id,intTISId,intItemIdEW,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_AddExtendedWarranty',false,{guidWS_Id:guidWS_Id,intTISId:intTISId,intItemIdEW:intItemIdEW},succeededCallback,failedCallback,userContext); },
+wsNRW_AddOnAccountTOTAL:function(guidWS_Id,decOnAccount,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_AddOnAccountTOTAL',false,{guidWS_Id:guidWS_Id,decOnAccount:decOnAccount},succeededCallback,failedCallback,userContext); },
+wsNRW_PasswordChange:function(guidWS_Id,strPassword,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_PasswordChange',false,{guidWS_Id:guidWS_Id,strPassword:strPassword},succeededCallback,failedCallback,userContext); },
+wsNRW_SETObservation:function(guidWS_Id,intOPTION,strObservarion,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SETObservation',false,{guidWS_Id:guidWS_Id,intOPTION:intOPTION,strObservarion:strObservarion},succeededCallback,failedCallback,userContext); },
+wsNRW_VISATPPaymentRequest:function(guidWS_Id,strLastName,strFirstName,strPhoneNumber,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_VISATPPaymentRequest',false,{guidWS_Id:guidWS_Id,strLastName:strLastName,strFirstName:strFirstName,strPhoneNumber:strPhoneNumber},succeededCallback,failedCallback,userContext); },
+wsNRW_VISATP_PaymentProcess:function(guidWS_Id,strAnswerKey,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_VISATP_PaymentProcess',false,{guidWS_Id:guidWS_Id,strAnswerKey:strAnswerKey},succeededCallback,failedCallback,userContext); },
+wsNRW_NPSPaymentRequest:function(guidWS_Id,strNameInCard,strAddressDoorNumber,strDocumentType,strDocumentNumber,strBirthDayDDMMAAAA,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_NPSPaymentRequest',false,{guidWS_Id:guidWS_Id,strNameInCard:strNameInCard,strAddressDoorNumber:strAddressDoorNumber,strDocumentType:strDocumentType,strDocumentNumber:strDocumentNumber,strBirthDayDDMMAAAA:strBirthDayDDMMAAAA},succeededCallback,failedCallback,userContext); },
+wsNRW_NPSPaymentProcess:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_NPSPaymentProcess',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_MercadoPagoPaymentRequest:function(guidWS_Id,strLastName,strFirstName,strPhoneNumber,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_MercadoPagoPaymentRequest',false,{guidWS_Id:guidWS_Id,strLastName:strLastName,strFirstName:strFirstName,strPhoneNumber:strPhoneNumber},succeededCallback,failedCallback,userContext); },
+wsNRW_MERCADOPAGO_PaymentProcess:function(guidWS_Id,strPreference_id,strCollection_Status,strExternal_Reference,strpayment_type,strCollection_id,strID,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_MERCADOPAGO_PaymentProcess',false,{guidWS_Id:guidWS_Id,strPreference_id:strPreference_id,strCollection_Status:strCollection_Status,strExternal_Reference:strExternal_Reference,strpayment_type:strpayment_type,strCollection_id:strCollection_id,strID:strID},succeededCallback,failedCallback,userContext); },
+wsNRW_DECIDIR_PaymentProcess:function(guidWS_Id,strToken,strCreditCardFirst6Digit,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_DECIDIR_PaymentProcess',false,{guidWS_Id:guidWS_Id,strToken:strToken,strCreditCardFirst6Digit:strCreditCardFirst6Digit},succeededCallback,failedCallback,userContext); },
+wsNRW_SessionWrite:function(guidWS_Id,strSessionName,strSessionValue,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SessionWrite',false,{guidWS_Id:guidWS_Id,strSessionName:strSessionName,strSessionValue:strSessionValue},succeededCallback,failedCallback,userContext); },
+wsNRW_SessionRead:function(guidWS_Id,strSessionName,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_SessionRead',false,{guidWS_Id:guidWS_Id,strSessionName:strSessionName},succeededCallback,failedCallback,userContext); },
+wsNRW_Script:function(guidWS_Id,strScriptLabel,JSonParameters,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Script',false,{guidWS_Id:guidWS_Id,strScriptLabel:strScriptLabel,JSonParameters:JSonParameters},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_GETCPenProvincia:function(guidWS_Id,strState,strCP,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_GETCPenProvincia',false,{guidWS_Id:guidWS_Id,strState:strState,strCP:strCP},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_GETProvincias:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_GETProvincias',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_GETLocalidad:function(guidWS_Id,strState,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_GETLocalidad',false,{guidWS_Id:guidWS_Id,strState:strState},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_GETQuotationByBranch:function(guidWS_Id,strState,intCity,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_GETQuotationByBranch',false,{guidWS_Id:guidWS_Id,strState:strState,intCity:intCity},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_GETQuotationByAddress:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_GETQuotationByAddress',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_GETItemQuotationByAddress:function(guidWS_Id,intItemID,decQTY,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_GETItemQuotationByAddress',false,{guidWS_Id:guidWS_Id,intItemID:intItemID,decQTY:decQTY},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_SETBranch2Delivery:function(guidWS_Id,strSucursal_Envio,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_SETBranch2Delivery',false,{guidWS_Id:guidWS_Id,strSucursal_Envio:strSucursal_Envio},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_SETAddress2Quotation:function(guidWS_Id,IDProvincia,strCodigoPostal,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_SETAddress2Quotation',false,{guidWS_Id:guidWS_Id,IDProvincia:IDProvincia,strCodigoPostal:strCodigoPostal},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_SETAddress2Delivery:function(guidWS_Id,strNombre,strApellido,strEMail,strTelefono,strCelular,decMonto,datFecha,bolPagado,IDProvincia,strLocalidad,strDestinatario,strObservaciones,IDSucursal,IDCorreo,strCalle,strNumero,strPiso,strDepto,strReferenciaDomicilio,strCodigoPostal,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_SETAddress2Delivery',false,{guidWS_Id:guidWS_Id,strNombre:strNombre,strApellido:strApellido,strEMail:strEMail,strTelefono:strTelefono,strCelular:strCelular,decMonto:decMonto,datFecha:datFecha,bolPagado:bolPagado,IDProvincia:IDProvincia,strLocalidad:strLocalidad,strDestinatario:strDestinatario,strObservaciones:strObservaciones,IDSucursal:IDSucursal,IDCorreo:IDCorreo,strCalle:strCalle,strNumero:strNumero,strPiso:strPiso,strDepto:strDepto,strReferenciaDomicilio:strReferenciaDomicilio,strCodigoPostal:strCodigoPostal},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_INSERTCharges2SaleOrder:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_INSERTCharges2SaleOrder',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_ENVIOPACK_SETAddress2DeliveryShort:function(guidWS_Id,strNombre,strApellido,strEMail,strTelefono,strCelular,strLocalidad,strDestinatario,strObservaciones,strCalle,strNumero,strPiso,strDepto,strReferenciaDomicilio,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ENVIOPACK_SETAddress2DeliveryShort',false,{guidWS_Id:guidWS_Id,strNombre:strNombre,strApellido:strApellido,strEMail:strEMail,strTelefono:strTelefono,strCelular:strCelular,strLocalidad:strLocalidad,strDestinatario:strDestinatario,strObservaciones:strObservaciones,strCalle:strCalle,strNumero:strNumero,strPiso:strPiso,strDepto:strDepto,strReferenciaDomicilio:strReferenciaDomicilio},succeededCallback,failedCallback,userContext); },
+wsNRW_setLogin:function(guidWS_Id,strWebNickName,strWebPassword,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_setLogin',false,{guidWS_Id:guidWS_Id,strWebNickName:strWebNickName,strWebPassword:strWebPassword},succeededCallback,failedCallback,userContext); },
+wsNRW_setLogout:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_setLogout',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_Compare_AddItem:function(guidWS_Id,intItemId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Compare_AddItem',false,{guidWS_Id:guidWS_Id,intItemId:intItemId},succeededCallback,failedCallback,userContext); },
+wsNRW_Compare_DeleteItems:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Compare_DeleteItems',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_Compare_DeleteOneItem:function(guidWS_Id,intItemId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Compare_DeleteOneItem',false,{guidWS_Id:guidWS_Id,intItemId:intItemId},succeededCallback,failedCallback,userContext); },
+wsNRW_Favorites_AddItem:function(guidWS_Id,intItemId,strNote,decValue,bolIsActive,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Favorites_AddItem',false,{guidWS_Id:guidWS_Id,intItemId:intItemId,strNote:strNote,decValue:decValue,bolIsActive:bolIsActive},succeededCallback,failedCallback,userContext); },
+wsNRW_Rates_AddItemRate:function(guidWS_Id,intItemId,strDesc,intRate,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_Rates_AddItemRate',false,{guidWS_Id:guidWS_Id,intItemId:intItemId,strDesc:strDesc,intRate:intRate},succeededCallback,failedCallback,userContext); },
+wsNRW_GetMyPassword:function(guidWS_Id,strNickName,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_GetMyPassword',false,{guidWS_Id:guidWS_Id,strNickName:strNickName},succeededCallback,failedCallback,userContext); },
+wsNRW_AddCart:function(guidWS_Id,intItemId,decItemQTY,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_AddCart',false,{guidWS_Id:guidWS_Id,intItemId:intItemId,decItemQTY:decItemQTY},succeededCallback,failedCallback,userContext); },
+wsNRW_UpdateCart:function(guidWS_Id,intTISId,intAction,decQTY,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_UpdateCart',false,{guidWS_Id:guidWS_Id,intTISId:intTISId,intAction:intAction,decQTY:decQTY},succeededCallback,failedCallback,userContext); },
+wsNRW_MinusCart:function(guidWS_Id,intItemId,intTisId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_MinusCart',false,{guidWS_Id:guidWS_Id,intItemId:intItemId,intTisId:intTisId},succeededCallback,failedCallback,userContext); },
+wsNRW_DeleteCart:function(guidWS_Id,intItemId,intTisId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_DeleteCart',false,{guidWS_Id:guidWS_Id,intItemId:intItemId,intTisId:intTisId},succeededCallback,failedCallback,userContext); },
+wsNRW_DeleteAllCart:function(guidWS_Id,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_DeleteAllCart',false,{guidWS_Id:guidWS_Id},succeededCallback,failedCallback,userContext); },
+wsNRW_ChangeSalesTerms:function(guidWS_Id,intStId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ChangeSalesTerms',false,{guidWS_Id:guidWS_Id,intStId:intStId},succeededCallback,failedCallback,userContext); },
+wsNRW_ChangeCreditCardLoanPlan:function(guidWS_Id,intCCPLId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ChangeCreditCardLoanPlan',false,{guidWS_Id:guidWS_Id,intCCPLId:intCCPLId},succeededCallback,failedCallback,userContext); },
+wsNRW_ChangeDiscount:function(guidWS_Id,intDisc,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ChangeDiscount',false,{guidWS_Id:guidWS_Id,intDisc:intDisc},succeededCallback,failedCallback,userContext); },
+wsNRW_ChangeDiscountByDiscountCode:function(guidWS_Id,strDiscountCode,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ChangeDiscountByDiscountCode',false,{guidWS_Id:guidWS_Id,strDiscountCode:strDiscountCode},succeededCallback,failedCallback,userContext); },
+wsNRW_ChangeDelivery:function(guidWS_Id,intDlId,succeededCallback, failedCallback, userContext) {
+return this._invoke(this._get_path(), 'wsNRW_ChangeDelivery',false,{guidWS_Id:guidWS_Id,intDlId:intDlId},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+PageMethods.set_path("/wfmWebSite2.aspx");
+PageMethods.wsNRW_ChangeItemIDSelected= function(guidWS_Id,intItemId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ChangeItemIDSelected(guidWS_Id,intItemId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Calculate= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Calculate(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SendEMail= function(guidWS_Id,strDisplayName,strMailTO,strMailToCC,strMailToCCO,strSubject,strBody,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SendEMail(guidWS_Id,strDisplayName,strMailTO,strMailToCC,strMailToCCO,strSubject,strBody,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SaveSaleOrder= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SaveSaleOrder(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SetNewCustomer= function(guidWS_Id,pname,pcountry,pstate,paddress,pcity,pzip,pfiscalclass,ptaxnumbertype,ptaxnumber,pemail,pphone,pnickname,ppass1,ppass2,pcaptcha,pCaptchaOriginal,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SetNewCustomer(guidWS_Id,pname,pcountry,pstate,paddress,pcity,pzip,pfiscalclass,ptaxnumbertype,ptaxnumber,pemail,pphone,pnickname,ppass1,ppass2,pcaptcha,pCaptchaOriginal,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SetNewContact= function(guidWS_Id,pname,pcountry,pstate,paddress,pcity,pzip,pemail,pphone,pbussiness,pMessage,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SetNewContact(guidWS_Id,pname,pcountry,pstate,paddress,pcity,pzip,pemail,pphone,pbussiness,pMessage,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SetNewCRMTask= function(guidWS_Id,intBranchId,intProfileId,intLangId,intUserId,intTaskTypeID,intTaskStatusID,intTask_Priority,strTask_Subject,strTaskDescription,strTaskResolution,intCaseId,intSOH_Bra_Id,intSOH_Id,intCustId,intContactId,decTaskPrice,intCurrencyId,strEMailAddressAdditional,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SetNewCRMTask(guidWS_Id,intBranchId,intProfileId,intLangId,intUserId,intTaskTypeID,intTaskStatusID,intTask_Priority,strTask_Subject,strTaskDescription,strTaskResolution,intCaseId,intSOH_Bra_Id,intSOH_Id,intCustId,intContactId,decTaskPrice,intCurrencyId,strEMailAddressAdditional,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SetNewCRMFastTask= function(guidWS_Id,intTaskTypeID,intTaskStatusID,intTask_Priority,strTask_Subject,strTaskDescription,strEMailAddressAdditional,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SetNewCRMFastTask(guidWS_Id,intTaskTypeID,intTaskStatusID,intTask_Priority,strTask_Subject,strTaskDescription,strEMailAddressAdditional,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SetCRMTaskCompliance= function(guidWS_Id,intTaskID,strNote,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SetCRMTaskCompliance(guidWS_Id,intTaskID,strNote,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_setNewCRMTaskNote= function(guidWS_Id,intUserId,intTaskID,strNote,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_setNewCRMTaskNote(guidWS_Id,intUserId,intTaskID,strNote,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_getURLHTML= function(guidWS_Id,strURL,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_getURLHTML(guidWS_Id,strURL,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_getPageHTML= function(guidWS_Id,strWebSiteURL,strDelimiterTAG,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_getPageHTML(guidWS_Id,strWebSiteURL,strDelimiterTAG,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_CustomerGroup_AddRelations= function(guidWS_Id,intCustgId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_CustomerGroup_AddRelations(guidWS_Id,intCustgId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Track_SetWSGuid= function(guidWS_Id,strGuid,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Track_SetWSGuid(guidWS_Id,strGuid,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Track_SaveWSTracking= function(guidWS_Id,intActionType,intActionId,strActionText,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Track_SaveWSTracking(guidWS_Id,intActionType,intActionId,strActionText,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Track_SaveWSDataStorage= function(guidWS_Id,intActionType,intActionId,strActionText,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Track_SaveWSDataStorage(guidWS_Id,intActionType,intActionId,strActionText,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_AddExtendedWarranty= function(guidWS_Id,intTISId,intItemIdEW,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_AddExtendedWarranty(guidWS_Id,intTISId,intItemIdEW,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_AddOnAccountTOTAL= function(guidWS_Id,decOnAccount,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_AddOnAccountTOTAL(guidWS_Id,decOnAccount,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_PasswordChange= function(guidWS_Id,strPassword,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_PasswordChange(guidWS_Id,strPassword,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SETObservation= function(guidWS_Id,intOPTION,strObservarion,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SETObservation(guidWS_Id,intOPTION,strObservarion,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_VISATPPaymentRequest= function(guidWS_Id,strLastName,strFirstName,strPhoneNumber,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_VISATPPaymentRequest(guidWS_Id,strLastName,strFirstName,strPhoneNumber,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_VISATP_PaymentProcess= function(guidWS_Id,strAnswerKey,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_VISATP_PaymentProcess(guidWS_Id,strAnswerKey,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_NPSPaymentRequest= function(guidWS_Id,strNameInCard,strAddressDoorNumber,strDocumentType,strDocumentNumber,strBirthDayDDMMAAAA,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_NPSPaymentRequest(guidWS_Id,strNameInCard,strAddressDoorNumber,strDocumentType,strDocumentNumber,strBirthDayDDMMAAAA,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_NPSPaymentProcess= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_NPSPaymentProcess(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_MercadoPagoPaymentRequest= function(guidWS_Id,strLastName,strFirstName,strPhoneNumber,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_MercadoPagoPaymentRequest(guidWS_Id,strLastName,strFirstName,strPhoneNumber,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_MERCADOPAGO_PaymentProcess= function(guidWS_Id,strPreference_id,strCollection_Status,strExternal_Reference,strpayment_type,strCollection_id,strID,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_MERCADOPAGO_PaymentProcess(guidWS_Id,strPreference_id,strCollection_Status,strExternal_Reference,strpayment_type,strCollection_id,strID,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_DECIDIR_PaymentProcess= function(guidWS_Id,strToken,strCreditCardFirst6Digit,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_DECIDIR_PaymentProcess(guidWS_Id,strToken,strCreditCardFirst6Digit,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SessionWrite= function(guidWS_Id,strSessionName,strSessionValue,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SessionWrite(guidWS_Id,strSessionName,strSessionValue,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_SessionRead= function(guidWS_Id,strSessionName,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_SessionRead(guidWS_Id,strSessionName,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Script= function(guidWS_Id,strScriptLabel,JSonParameters,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Script(guidWS_Id,strScriptLabel,JSonParameters,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_GETCPenProvincia= function(guidWS_Id,strState,strCP,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_GETCPenProvincia(guidWS_Id,strState,strCP,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_GETProvincias= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_GETProvincias(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_GETLocalidad= function(guidWS_Id,strState,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_GETLocalidad(guidWS_Id,strState,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_GETQuotationByBranch= function(guidWS_Id,strState,intCity,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_GETQuotationByBranch(guidWS_Id,strState,intCity,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_GETQuotationByAddress= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_GETQuotationByAddress(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_GETItemQuotationByAddress= function(guidWS_Id,intItemID,decQTY,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_GETItemQuotationByAddress(guidWS_Id,intItemID,decQTY,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_SETBranch2Delivery= function(guidWS_Id,strSucursal_Envio,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_SETBranch2Delivery(guidWS_Id,strSucursal_Envio,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_SETAddress2Quotation= function(guidWS_Id,IDProvincia,strCodigoPostal,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_SETAddress2Quotation(guidWS_Id,IDProvincia,strCodigoPostal,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_SETAddress2Delivery= function(guidWS_Id,strNombre,strApellido,strEMail,strTelefono,strCelular,decMonto,datFecha,bolPagado,IDProvincia,strLocalidad,strDestinatario,strObservaciones,IDSucursal,IDCorreo,strCalle,strNumero,strPiso,strDepto,strReferenciaDomicilio,strCodigoPostal,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_SETAddress2Delivery(guidWS_Id,strNombre,strApellido,strEMail,strTelefono,strCelular,decMonto,datFecha,bolPagado,IDProvincia,strLocalidad,strDestinatario,strObservaciones,IDSucursal,IDCorreo,strCalle,strNumero,strPiso,strDepto,strReferenciaDomicilio,strCodigoPostal,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_INSERTCharges2SaleOrder= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_INSERTCharges2SaleOrder(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ENVIOPACK_SETAddress2DeliveryShort= function(guidWS_Id,strNombre,strApellido,strEMail,strTelefono,strCelular,strLocalidad,strDestinatario,strObservaciones,strCalle,strNumero,strPiso,strDepto,strReferenciaDomicilio,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ENVIOPACK_SETAddress2DeliveryShort(guidWS_Id,strNombre,strApellido,strEMail,strTelefono,strCelular,strLocalidad,strDestinatario,strObservaciones,strCalle,strNumero,strPiso,strDepto,strReferenciaDomicilio,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_setLogin= function(guidWS_Id,strWebNickName,strWebPassword,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_setLogin(guidWS_Id,strWebNickName,strWebPassword,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_setLogout= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_setLogout(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Compare_AddItem= function(guidWS_Id,intItemId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Compare_AddItem(guidWS_Id,intItemId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Compare_DeleteItems= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Compare_DeleteItems(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Compare_DeleteOneItem= function(guidWS_Id,intItemId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Compare_DeleteOneItem(guidWS_Id,intItemId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Favorites_AddItem= function(guidWS_Id,intItemId,strNote,decValue,bolIsActive,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Favorites_AddItem(guidWS_Id,intItemId,strNote,decValue,bolIsActive,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_Rates_AddItemRate= function(guidWS_Id,intItemId,strDesc,intRate,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_Rates_AddItemRate(guidWS_Id,intItemId,strDesc,intRate,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_GetMyPassword= function(guidWS_Id,strNickName,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_GetMyPassword(guidWS_Id,strNickName,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_AddCart= function(guidWS_Id,intItemId,decItemQTY,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_AddCart(guidWS_Id,intItemId,decItemQTY,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_UpdateCart= function(guidWS_Id,intTISId,intAction,decQTY,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_UpdateCart(guidWS_Id,intTISId,intAction,decQTY,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_MinusCart= function(guidWS_Id,intItemId,intTisId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_MinusCart(guidWS_Id,intItemId,intTisId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_DeleteCart= function(guidWS_Id,intItemId,intTisId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_DeleteCart(guidWS_Id,intItemId,intTisId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_DeleteAllCart= function(guidWS_Id,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_DeleteAllCart(guidWS_Id,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ChangeSalesTerms= function(guidWS_Id,intStId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ChangeSalesTerms(guidWS_Id,intStId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ChangeCreditCardLoanPlan= function(guidWS_Id,intCCPLId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ChangeCreditCardLoanPlan(guidWS_Id,intCCPLId,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ChangeDiscount= function(guidWS_Id,intDisc,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ChangeDiscount(guidWS_Id,intDisc,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ChangeDiscountByDiscountCode= function(guidWS_Id,strDiscountCode,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ChangeDiscountByDiscountCode(guidWS_Id,strDiscountCode,onSuccess,onFailed,userContext); }
+PageMethods.wsNRW_ChangeDelivery= function(guidWS_Id,intDlId,onSuccess,onFailed,userContext) {PageMethods._staticInstance.wsNRW_ChangeDelivery(guidWS_Id,intDlId,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+    
+         
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', document.getElementById('frmWebMain'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 20000);
+//]]>
+</script>
+
+
+
+        
+        <div id="divBody"><script>
+function logono2() {
+        if (-1 == -1) {document.getElementById('log1').style.display = 'none';document.getElementById('nolog1')}
+
+        if (-1 != -1) {document.getElementById('nolog1').style.display = 'none';document.getElementById('log1').style.display = 'block';}
+           }
+</script>
+
+
+<!-- START OF WRAPPER MINI 1 -->
+<div id="header_wrapper_grey">
+
+
+<!-- START OF WRAPPER LOGO -->
+    <div id="wrapper_logo">
+
+<!-- MENU CORPORATIVO 3 -->
+<div class="cont_navigation3">
+
+    <div id="navigation3">
+            <ul>
+
+                <li><a href="http://www.resinformatica.com.ar/HOME/inicio/GlobalBluePoint-ERP.aspx" class="button-top2">INICIO</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/CATEGORIAS/inicio/GlobalBluePoint-ERP.aspx" class="button-top2" id="resalta">PRODUCTOS</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/START_OFERTAS/ofertas/Todas las Ofertas estan aqui/GlobalBluePoint-ERP.aspx" class="button-top2">OFERTAS</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/START_NOV/novedades/Todo lo Nuevo esta aqui/GlobalBluePoint-ERP.aspx" class="button-top2">NOVEDADES</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/ABOUT/EMPRESA/GlobalBluePoint-ERP.aspx" class="button-top2">LA EMPRESA</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/SERVICE/REPARACIONES/servicio técnico/GlobalBluePoint-ERP.aspx" class="button-top2">REPARACIONES</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/GARANTIA/RMA/rma/GlobalBluePoint-ERP.aspx" class="button-top2">GARANTÍA Y RMA</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/STAFF/US/personal/GlobalBluePoint-ERP.aspx" class="button-top2">STAFF</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/BANKS/bancos/nuestros bancos/GlobalBluePoint-ERP.aspx" class="button-top2">NUESTROS BANCOS</a>
+                </li>
+
+                <li><a href="http://www.resinformatica.com.ar/CONTACT/contacto/Dejanos tus datos para que podamos asesorarte/GlobalBluePoint-ERP.aspx" class="button-top2">CONTACTO</a>
+                </li>
+
+             </ul>
+     </div>
+</div><!-- END MENU CORPORATIVO 3 -->
+
+
+
+
+
+<!-- BOTON EN MENU SÓLO PRODUCTOS -->
+<div class="cont_navigation3p">
+    <div id="navigation3">
+            <ul>
+                <li><a href="http://www.resinformatica.com.ar/HOME/inicio/GlobalBluePoint-ERP.aspx" class="button-top2">INICIO</a>
+                </li>
+                <li><a href="http://www.resinformatica.com.ar/CATEGORIAS/inicio/GlobalBluePoint-ERP.aspx" class="button-top2" id="resalta">PRODUCTOS</a>
+                </li>
+             </ul>
+     </div>
+</div>
+<!-- FIN BOTON EN MENU SÓLO PRODUCTOS -->
+
+        <!-- START OF TOP HEADER CENTRA -->
+        <div id="top_header">
+        
+    
+<!-- START OF TOP_LOGO -->
+<div id="top_logo_mini">
+        <!--EDITADO: añado descripción del link-->
+        <a href="http://www.resinformatica.com.ar/HOME/inicio/GlobalBluePoint-ERP.aspx" target="_self"><img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/top-logo2.png" alt="RES INFORMATICA" /> </a>
+</div>
+<!-- END OF TOP_LOGO -->
+
+
+
+<!--------------------------------- USER LOGIN -------------------------------->
+<div class="light_mini">
+    <div class="button-group">
+
+        <!-- EDITADO: agrando tamaño de la imagen, no cumple con el tamaño
+        Agrego atributo alt a la imagen -->
+         <a class='light' title="Mis compras" href="http://www.resinformatica.com.ar/CHECKOUT/mycart/GlobalBluePoint-ERP.aspx"><img onload="logono2()" width="18" height="18" alt="Ingresar" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/cart_black.svg"/><ul><p id="contador">0</p></ul>Ingresar</a>
+        <!--EDITADO: agrando tamaños de imagen y alt-->
+         <div id="nolog1"><a class='light' title="Iniciar sesión" href="http://www.resinformatica.com.ar/LOGIN_ONLY/login-only/GlobalBluePoint-ERP.aspx"><img alt="Mi perfil" style="height: 16px; width: 16px" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/user_black.svg"/><ul>Ingresar</ul></a>
+         </div>
+     <div id="log1">
+
+         <!--EDITADO: añado keypress en elemento a, añado alt en elemento img, agrando boton-->
+         <a class='light' title="Cerrar sesión" href="#" onkeypress='funLogout();location.reload();return false;' onclick='funLogout();location.reload();return false;'><img style="height: 16px; width: 16px" alt="Botón de cerrar sesión" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/user_out_black.svg"/><ol>Cerrar sesión *</ol></a>
+     </div>
+
+    </div>
+</div>
+<!------------------------------- FIN USER LOGIN ------------------------------->
+
+
+
+
+<!---------------------- SEARCH 3 sin required ------------>
+<div id="header_wrapper_search3"> 
+     <div id="wrapper_search3">
+         <div id="top_top3">
+    
+<div id="searchform">
+<form>
+ <ul class="searchform">
+       <li>
+           <!--EDITADO: añado title para el input-->
+          <input type="text" id="INPUT_BUSCADOR" keypress="Buscar" placeholder="Buscar" title="Buscador" />
+      </li>
+
+       <li>
+    <!--Agrego alt descriptivo al boton de buscar, aclaro su rol (boton)-->
+   <button id="INPUT_BUSCADOR" onkeypress="fBuscador(); return false;" onclick="fBuscador(); return false;" role="button"> <img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/search_gris.svg" alt="Buscar en el sitio" class="go"/>
+   </button>
+   </li>
+</ul>
+</form>
+
+<script>
+function fBuscador() {
+    var STerm = document.getElementById("INPUT_BUSCADOR").value;
+    
+window.location=("http://www.resinformatica.com.ar//SEARCHED/ST=" + STerm + "/GlobalBluePoint-ERP.aspx");
+}
+</script>
+</div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- start data address -->
+<div class="top_adress">
+    <p class="parrafo_head2">Calle 529 n° 3603 esquina 31 // Te: (0221) 479-8612/479-2975/414-2518
+    </p>
+
+    <p class="parrafo_head2">
+<!--EDITADO: agrego atributo alt-->
+<img alt="Contactenos por whatsapp: +54 9 221 358-4400" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/whatsapp_green.svg"> WhatsApp +54 9 221 358-4400.
+    </p>
+
+
+</div>
+<!-- end data address -->
+
+</div>
+<!--------------------------------- FIN SEARCH 3 required -------------------------------->
+
+
+
+
+    </div><!-- END OF TOP HEADER CENTRA -->
+  </div><!-- END OF WRAPPER LOGO -->
+</div><!-- END OF WRAPPER MINI 1 -->
+
+
+<div id="wrapper">
+<div class="texto1">
+<h3>
+<br>
+Si desea realizar un pedido, primero deberá solicitar su usuario y contraseña enviando un mail con sus datos (Apellido, nombre, dirección, teléfono, DNI/CUIT) a info@resinformatica.com.ar
+</h3>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- START OF WRAPPER -->
+<div id="wrapper">
+<div class="existe23664">
+    <div id="content_wrapper">
+      
+        <div id="logclientes">
+             <h3>Usuarios Registrados</h3>
+               <p class="">Ingrese su email y password</p>
+                <span id="txtNickNameVali"></span>
+                <input type="email" id="txtNickName" placeholder="Email" value="">
+                <input type="password" id="txtPassword" placeholder="Password">
+                <!-- EDITADO: añado keypress -->
+                <input type="submit" id="btnLogin" onkeypress="validateForm(); return false;" onclick="validateForm(); return false;" value="Entrar">
+        </div>
+    </div>
+</div>
+</div>
+<!-- END OF WRAPPER -->
+
+    
+
+
+
+
+
+<div id="border_wrapper"></div>
+
+<div id="bottom_footer_wrapper">
+
+<!-- START OF FOOTER -->
+<div id="footer">
+
+    <!-- START OF FOOTER_COL1 -->
+    <div class="footer_col1">
+
+        <!-- START OF WHITE HIGHLIGHT -->
+        <div class="white_highlight" align="center">
+
+<img alt="RES INFORMATICA" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/top-logo2.png" />
+<br>
+            <h4>Casa Central La Plata</h4>
+            <p>Calle 529 n° 3603 esquina 31 Tel: (0221) 479-8612/479-2975/414-2518</p>
+            <br>
+         </div>
+        <!--END OF WHITE HIGHLIGHT -->
+
+    </div>
+    <!-- END OF FOOTER_COL1 -->
+
+
+    <!-- START OF FOOTER_COL1 -->
+    <div class="footer_col1">
+
+        <h4>Información</h4>
+        <ul>
+            <li><a href="http://www.resinformatica.com.ar/ABOUT/nosotros/GlobalBluePoint-ERP.aspx">Nosotros</a></li>
+            <li><a href="http://www.resinformatica.com.ar/CONTACT/Message/GlobalBluePoint-ERP.aspx">Contacto</a></li>
+        </ul>
+
+    </div>
+    <!-- END OF FOOTER_COL1 -->
+
+
+    <!-- START OF FOOTER_COL1 -->
+    <div class="footer_col1">
+
+        <h4>Social</h4>
+
+        <ul class="footer_col1">
+            <!--EDITADO: Agrando las imágenes para que cumplan con el tamaño minimo recomendado
+            Hago el texto alternativo mas descriptivo -->
+            <li> <a href="https://www.facebook.com/resinformaticalaplata/?ref=bookmarks/" target="_blank"><img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/facebook.svg" title="Visite nuestro Facebook" alt="Visite nuestro Facebook" style="height: 16px; width: 16px"/>Facebook</a> </li>
+        </ul>
+
+    </div>
+    <!-- END OF FOOTER_COL1 -->
+
+
+    <!-- START OF FOOTER_COL1 -->
+    <div class="footer_col1">
+
+        <h4>Regístrese</h4>
+        <ul>
+            <li><a href="http://www.resinformatica.com.ar/LOGIN_ONLY/user/GlobalBluePoint-ERP.aspx">Iniciar sesión</a></li>
+
+        </ul>
+
+        <!-- EDITADO: agrego atributo alt-->
+<img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/datafiscal.png" style="
+    width: 70px;
+    margin-top: 20px;"
+    alt="Datos Fiscales"
+>
+
+    </div>
+    <!-- END OF FOOTER_LAST -->
+
+
+
+
+</div>
+<!-- END OF FOOTER -->
+
+<div class="clear"></div>
+
+
+<!-- START OF BOTTOM_FOOTER_WRAPPER -->
+<div id="bottom_footer_wrapper">
+
+    <div id="bottom_footer">
+
+<!-- START OF COPYRIGHT 
+<div id="copyright">
+© Design by <a href="http://cmdestudio.com.ar/" target="_blank">CMDestudio</a> 
+</div>
+<!-- END OF COPYRIGHT -->
+
+
+
+    </div>
+    <!-- END OF BOTTOM FOOTER -->
+
+</div>
+<!-- END OF BOTTOM_FOOTER_WRAPPER --></div>
+        
+
+
+
+            
+          
+                  
+        <input name="hidGUID" type="hidden" id="hidGUID" value="0235665b-90fa-4375-bb2e-5a3f83ccfdb2" />
+        <input name="hidRequestIP" type="hidden" id="hidRequestIP" value="163.10.42.101" />
+        <input name="hidWSId" type="hidden" id="hidWSId" value="fda82f1b-29c9-4d65-ad13-8b2804d697be" />
+        <input name="hidWSUId" type="hidden" id="hidWSUId" value="-1" />
+        <input name="hidPageId" type="hidden" id="hidPageId" value="5af3746d-b36f-4eb1-a32f-70882d13e17c" />        
+        <input name="hidCompId" type="hidden" id="hidCompId" value="1" />
+        <input name="hidLangId" type="hidden" id="hidLangId" value="-1" />
+        <input name="hidStorId" type="hidden" id="hidStorId" value="1" />
+        <input name="hidItemID" type="hidden" id="hidItemID" value="-1" />
+        <input name="hidPriceListId" type="hidden" id="hidPriceListId" value="1" />
+        <input name="hidPriceListId4StrikeThrough" type="hidden" id="hidPriceListId4StrikeThrough" value="-1" />
+        <input name="hidCustomerId" type="hidden" id="hidCustomerId" value="-1" />
+        <input name="hidNewCustomerId" type="hidden" id="hidNewCustomerId" value="1" />
+        <input name="hidSalesTermsId" type="hidden" id="hidSalesTermsId" value="1" />
+        <input name="hidCreditCard" type="hidden" id="hidCreditCard" value="-1" />
+        <input name="hidCreditCardLoanPlan" type="hidden" id="hidCreditCardLoanPlan" value="-1" />
+        <input name="hidCreditCardLoanQuoteQTY" type="hidden" id="hidCreditCardLoanQuoteQTY" value="-1" />                                        
+        <input name="hidDiscountId" type="hidden" id="hidDiscountId" value="1" />
+        <input name="hidDeliveryId" type="hidden" id="hidDeliveryId" value="1" />
+        <input name="hidProfileId" type="hidden" id="hidProfileId" value="1" />
+        <input name="hidBranchId" type="hidden" id="hidBranchId" value="1" />
+        <input name="hidUserId" type="hidden" id="hidUserId" value="2" />
+        <input name="hidCampaignId" type="hidden" id="hidCampaignId" value="-1" />
+        
+        <input name="hidCartItemsQty" type="hidden" id="hidCartItemsQty" value="0" />
+        <input name="hidCartTotalTax" type="hidden" id="hidCartTotalTax" value="0.00" />
+        <input name="hidCartSubTotal" type="hidden" id="hidCartSubTotal" value="0.00" />
+        <input name="hidCartTotal" type="hidden" id="hidCartTotal" value="0.00" /> 
+        <input name="hidCartOnAccount" type="hidden" id="hidCartOnAccount" value="0" />       
+        <input name="hidCartInterest" type="hidden" id="hidCartInterest" value="0.00" />        
+        <input name="hidCartDiscount" type="hidden" id="hidCartDiscount" value="0.00" />                
+        <input name="hidEP_ParametersReady" type="hidden" id="hidEP_ParametersReady" value="0" />
+        <input name="hidEP_QuotationReady" type="hidden" id="hidEP_QuotationReady" value="0" />
+        
+        
+        <input name="hidWebSiteID" type="hidden" id="hidWebSiteID" value="fda82f1b-29c9-4d65-ad13-8b2804d697be" />
+        <input name="hidIsInDesignMode" type="hidden" id="hidIsInDesignMode" value="0" />
+           
+
+
+        
+        <div id="divFooter"><script>
+
+	function funCalculateUserFunction()
+		{
+
+			 var decItemsQty    = document.getElementById('hidCartItemsQty').value;
+			 var decTotal       = document.getElementById('hidCartTotal').value;
+			 var decTotalTax    = document.getElementById('hidCartTotalTax').value;
+			 var decSubTotal    = document.getElementById('hidCartSubTotal').value;
+
+			 try
+			 {
+				 document.getElementById('contador').innerHTML = decItemsQty;
+				 document.getElementById('txtTotal').innerHTML = decTotal;
+				 document.getElementById('txtTotalTaxes').innerHTML = decTotalTax;
+				 document.getElementById('txtSubTotal').innerHTML = decSubTotal;
+			 }
+			 catch(err)
+			 {}
+
+		}
+
+</script>
+
+
+
+<script>
+function btn_agregar_no() {
+        if (-1 == -1) {
+            document.getElementById("spanagregado").style.display = 'none';
+        }
+}
+btn_agregar_no();
+</script> 
+
+<script>
+    function validateForm2() {
+        var x = document.getElementById('txtNickName2').value;
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            document.getElementById('txtNickName2').style.borderColor = 'red';
+            document.getElementById('txtNickName2Vali').innerHTML = '<p>El email ingresado es inválido, reintente</p>';
+            return false;
+        } else {
+            document.getElementById('txtNickName2').style.borderColor = '#ccc';
+            document.getElementById('txtNickName2Vali').innerHTML = '';
+            alert(x);
+            funTrack_SaveWSTracking(1, 1, x);
+            return false;
+        }
+    }
+</script>
+<script>
+    function validateForm() {
+        var x = document.getElementById('txtNickName').value;
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            document.getElementById('txtNickName').style.borderColor = 'red';
+            document.getElementById('txtNickNameVali').innerHTML = '<p>El email ingresado es inválido, reintente</p>';
+            return false;
+        } else {
+            document.getElementById('txtNickName').style.borderColor = '#ccc';
+            document.getElementById('txtNickNameVali').innerHTML = '';
+            funLogin('txtNickName', 'txtPassword');
+
+        }
+    }
+
+    function funLoginOKUserFunction(intCustId) {
+        location.replace("http://www.resinformatica.com.ar/home/GlobalBluePoint-ERP.aspx");
+    }
+
+    function funLoginBADUserFunction(intCustId) {
+        document.getElementById('txtNickName').style.borderColor = 'red';
+        document.getElementById('txtPassword').style.borderColor = 'red';
+        document.getElementById('txtNickNameVali').innerHTML = '<p>El email o password ingresado es inválido, reintente</p>';
+    }
+</script>
+
+
+
+<script>
+    var error = 0;
+    var arg = "<select id='provinciaSelect'><option value='0'>Seleccione Provincia</option><option value='54020'>Buenos Aires</option><option value='54014'>Catamarca</option><option value='54022'>Chaco</option><option value='54012'>Chubut</option><option value='54019'>Ciudad Autónoma de Buenos Aires</option><option value='54001'>Córdoba</option><option value='54005'>Corrientes</option><option value='54004'>Entre Ríos</option><option value='54010'>Formosa</option><option value='54007'>Jujuy</option><option value='54016'>La Pampa</option><option value='54015'>La Rioja</option><option value='54002'>Mendoza</option><option value='54021'>Misiones</option><option value='54011'>Neuquén</option><option value='54009'>Río Negro</option><option value='54023'>Salta</option><option value='54008'>San Juan</option><option value='54013'>San Luis</option><option value='54017'>Santa Cruz</option><option value='54024'>Santa Fé</option><option value='54006'>Santiago del Estero</option><option value='54018'>Tierra del Fuego</option><option value='54003'>Tucumán</option></select>";
+
+    var farg = "<select id='fiscalSelect'><option value='2'>Consumidor Final</option><option value='1'>Responsable Inscripto</option><option value='3'>Monotributista</option><option value='4'>Exento</option></select>";
+
+    var bra = "<select id='provinciaSelect'><option value='55002'>Acre</option><option value='55003'>Amapá</option><option value='55004'>Amazonas</option><option value='55005'>Bahía</option><option value='55006'>Ceará</option><option value='55007'>Espíritu Santo</option><option value='55008'>Goiás</option><option value='55009'>Marañao</option><option value='55010'>Mato Groso</option><option value='55011'>Mato Groso del Sur</option><option value='55012'>Minas Gerais</option><option value='55013'>Pará</option><option value='55014'>Paraíba</option><option value='55015'>Paraná</option><option value='55016'>Pernambuco</option><option value='55017'>Piauí</option><option value='55001'>Rio de Janeiro</option><option value='55018'>Río Grande del Norte</option><option value='55019'>Río Grande del Sur</option><option value='55020'>Rondonia</option><option value='55021'>Roraima</option><option value='55022'>San Pablo</option><option value='55023'>Santa Catalina</option><option value='55024'>Sergipe</option><option value='55025'>Tocantins</option></select>";
+
+    var fbra = "<select id='fiscalSelect'><option value='2'>Consumidor Final</option></select>";
+
+    var chi = "<select id='provinciaSelect'><option value='56001'>Aisén del Gral. Carlos Ibáñez del Campo</option><option value='56002'>Antofagasta</option><option value='56015'>Arica y Parinacota</option><option value='56003'>Atacama</option><option value='56004'>Bío-Bío</option><option value='56005'>Coquimbo</option><option value='56006'>La Araucanía</option><option value='56007'>Libertador Gral. Bernardo O-Higgins</option><option value='56008'>Los Lagos</option><option value='56014'>Los Ríos</option><option value='56009'>Magallanes y Antártica Chilena</option><option value='56010'>Maule</option><option value='56011'>Metropolitana de Santiago</option><option value='56012'>Tarapacá</option><option value='56013'>Valparaíso</option></select>";
+
+    var fchi = "<select id='fiscalSelect'><option value='2'>Consumidor Final</option></select>";
+
+    var gua = "<select id='provinciaSelect'><option value='595001'>Alto Paraguay</option><option value='595002'>Alto Paraná</option><option value='595003'>Amambay</option><option value='595004'>Boquerón</option><option value='595005'>Caaguazú</option><option value='595006'>Caazapá</option><option value='595007'>Canindeyú</option><option value='595008'>Central</option><option value='595009'>Concepción</option><option value='595010'>Cordillera</option><option value='595018'>Distrito Capital</option><option value='595011'>Guairá</option><option value='595012'>Itapúa</option><option value='595013'>Misiones</option><option value='595014'>Ñeembucú</option><option value='595015'>Paraguarí</option><option value='595016'>Presidente Hayes</option><option value='595017'>San Pedro</option></select>";
+
+    var fgua = "<select id='fiscalSelect'><option value='2'>Consumidor Final</option></select>";
+
+    var uru = "<select id='provinciaSelect'><option value='598001'>Artigas</option><option value='598002'>Canelones</option><option value='598003'>Cerro Largo</option><option value='598004'>Colonia</option><option value='598005'>Durazno</option><option value='598006'>Flores</option><option value='598007'>Florida</option><option value='598008'>Lavalleja</option><option value='598009'>Maldonado</option><option value='598010'>Montevideo</option><option value='598011'>Paysandú</option><option value='598012'>Río Negro</option><option value='598013'>Rivera</option><option value='598014'>Rocha</option><option value='598015'>Salto</option><option value='598016'>San José</option><option value='598017'>Soriano</option><option value='598018'>Tacuarembó</option><option value='598019'>Treinta y Tres</option></select>";
+
+    var furu = "<select id='fiscalSelect'><option value='2'>Consumidor Final</option></select>";
+
+    function paisFunction() {
+        var inpais = document.getElementById("paisSelect").value;
+        if (inpais == 54) {
+            document.getElementById("provinciademo").innerHTML = arg;
+            document.getElementById("fiscaldemo").innerHTML = farg;
+            document.getElementById("dnilabel").innerHTML = "DNI o CUIT";
+        }
+        if (inpais == 55) {
+            document.getElementById("provinciademo").innerHTML = bra;
+            document.getElementById("fiscaldemo").innerHTML = fbra;
+            document.getElementById("dnilabel").innerHTML = "Pasaporte*";
+        }
+        if (inpais == 56) {
+            document.getElementById("provinciademo").innerHTML = chi;
+            document.getElementById("fiscaldemo").innerHTML = fchi;
+            document.getElementById("dnilabel").innerHTML = "Pasaporte*";
+        }
+        if (inpais == 595) {
+            document.getElementById("provinciademo").innerHTML = gua;
+            document.getElementById("fiscaldemo").innerHTML = fgua;
+            document.getElementById("dnilabel").innerHTML = "Pasaporte*";
+        }
+        if (inpais == 598) {
+            document.getElementById("provinciademo").innerHTML = uru;
+            document.getElementById("fiscaldemo").innerHTML = furu;
+            document.getElementById("dnilabel").innerHTML = "Pasaporte*";
+        }
+    }
+
+    function vMail() {
+        var x = document.getElementById('txtNickName2').value;
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+            document.getElementById('txtNickName2').style.borderColor = 'red';
+            document.getElementById('txtNickName2Vali').innerHTML = 'El email ingresado es inválido, reintente';
+            error++;
+            return false;
+        } else {
+            document.getElementById('txtNickName2').style.borderColor = '#ccc';
+            document.getElementById('txtNickName2Vali').innerHTML = '';
+        }
+
+    }
+
+    function vFields(strControlname, strControlspan, strControlText, strValor) {
+        var x = document.getElementById(strControlname).value;
+        if (x == strValor) {
+            document.getElementById(strControlname).style.borderColor = 'red';
+            document.getElementById(strControlspan).innerHTML = strControlText;
+            error++;
+        } else {
+            document.getElementById(strControlname).style.borderColor = '#ccc';
+            document.getElementById(strControlspan).innerHTML = '';
+        }
+
+    }
+
+   function getValue() {
+
+      var traeEmail = document.getElementById("txtNickName2").value;
+      var traePass = document.getElementById("txtPassword2").value;
+      var traeApellido = document.getElementById("pname1").value;
+      var traeNombre = document.getElementById("pname2").value;
+      var idPais = document.getElementById("paisSelect").value;
+      var idProvincia = document.getElementById("provinciaSelect").value;
+      var traeFiscal = document.getElementById("fiscalSelect").value;
+      var traeDni = document.getElementById("pdni").value;
+      var traeCiudad = document.getElementById("pcity").value;
+      var traeDire = document.getElementById("paddress").value;
+      var traeCp = document.getElementById("pzip").value;
+      var traeTel = document.getElementById("pphone").value;
+
+      vMail();
+      vFields('txtPassword2', 'txtPassword2Vali', 'Por Favor, Ingrese un password', '');
+      vFields('pname1', 'pname1Vali', 'Este campo es obligatorio', '');
+      vFields('pname2', 'pname2Vali', 'Este campo es obligatorio', '');
+      vFields('paisSelect', 'paisSelectVali', 'Por Favor, Seleccione País', '0');
+      vFields('provinciaSelect', 'provinciaSelectVali', 'Por Favor, Seleccione Provincia', '0');
+      vFields('pdni', 'pdniVali', 'Este campo es obligatorio', '');
+      vFields('pcity', 'pcityVali', 'Este campo es obligatorio', '');
+      vFields('paddress', 'paddressVali', 'Este campo es obligatorio', '');
+      vFields('pzip', 'pzipVali', 'Este campo es obligatorio', '');
+      vFields('pphone', 'pphoneVali', 'Este campo es obligatorio', '');
+
+
+
+
+      if (error != 0) {
+          error = 0;
+          location.href = '#topError'
+      } else {
+          if (idPais != 54) {
+              var tntid = 6;
+          } else {
+              if (traeFiscal != 2) {
+                  var tntid = 1;
+              } else {
+                  var tntid = 5;
+              }
+          }
+nombreCompleto=traeApellido + ' ' + traeNombre;
+
+//alert(nombreCompleto);
+//alert('Error:' + error + ' Email:' + traeEmail + ' pass:' + traePass + ' Apellido:' + traeApellido + ' Nombre:' + traeNombre + ' tel:' + traeTel + ' Zip:' + traeCp + ' Dire:' + traeDire + ' Ciudad:' + traeCiudad + ' Dni:' + traeDni + ' Pais:' + idPais + ' Provincia:' + idProvincia + ' Fiscal:' + traeFiscal);
+
+
+funSetNewCustomer(nombreCompleto, idPais, idProvincia, traeDire, traeCiudad, traeCp, traeFiscal, tntid, traeDni, traeEmail, traeTel, traeEmail, traePass, traePass, 1, 1);
+      }
+  }
+  function funNoSetNewCustomerUserFunction(intCustomerId) {
+      alert(intCustomerId + 'NO')
+  }
+
+  function funSetNewCustomerUserFunction(intCustomerId) {
+      alert(intCustomerId + 'SI')
+  }
+</script></div>
+        
+
+
+        
+        <iframe id="iframeUIE" width="0" height="0" bordercolor="transparent" style="background-color: Transparent; visibility:hidden" src="http://www.resinformatica.com.ar/wfmUpdateIsEditing.aspx" title="iframe"></iframe>
+        
+
+
+
+
+        
+        <div id="divGBPLogo" style="visibility:visible !important;  display:block !important; text-align:center !important;" align="center">
+             
+            <style>
+                #divGlobalBluePointWhiteBackground
+                    {
+                      background-color:white;
+                      padding-bottom:10px
+                    }
+                #divPoweredByGlobalBluePoint  a 
+                {
+                  font-size: 9px;
+                  font-family: verdana;  
+                  color: #495669;
+                  text-decoration: none;
+                  border:none;
+                }
+                #div_DesignedBy  a 
+                {
+                  font-size: 9px;
+                  font-family: verdana;
+                  color: #495669;
+                  text-decoration: none;
+                  border:none;
+                }  
+                #div_OtherLogo  a 
+                {
+                  font-size: 9px;
+                  font-family: verdana;
+                  color: #495669;
+                  text-decoration: none;
+                  border:none;
+                } 
+                #div_DataFiscal  a 
+                {
+                  font-size: 9px;
+                  font-family: verdana;
+                  color: #495669;
+                  text-decoration: none;
+                  border:none;
+                }                               
+            </style>             
+
+             
+            
+            <div id="divGlobalBluePointWhiteBackground" class="whitebackground" style="padding-bottom:15px;display:inline-block !important; width:100%;" align="center">
+                 
+
+                <div id="divPoweredByGlobalBluePoint" 
+                     style="background-color:White;display:inline-block !important; ">
+                    <a href="https://www.globalbluepoint.com" id="hrefPoweredBy" target="_blank" style="display:inline-block !important;" title="Este Sitio ha sido diseñado y se ejecuta sobre el Framework de Desarrollo WEB GlobalBluePoint© ERP:
+Sistema de Gestión Comercial y Facturación Electrónica, MercadoLibre©, CRM, MRP, e-Commerce, Digitalización, Créditos y más . . ."> 
+                    <!-- EDITADO:añado atributo alt para la imagen,y texto descripcion del link -->    
+                    Visitar la página del desarrollador
+                    <img alt="Pagina creada por GlobalBluePoint" src="http://www.resinformatica.com.ar/App_Images/GBPPoweredByWebSite.png" id="imgLogoGlobalBluePoint" style="color:Transparent;width:195px;display:inline-block !important;" />
+                    </a>                             
+                    <br />
+                </div>
+
+                <div id="div_DesignedBy" style="background-color:White;display:inline-block !important; padding-left:25px;">
+                    <a href="http://www.cmdestudio.com.ar" id="ctrlDesignedBy_href" target="_blank" style="display:inline-block !important;" title="Consultoría, Diseño y Desarrollo Web basado en el Framework WEB de GlobalBluePoint© ERP"> 
+                        <img src="http://www.cmdestudio.com.ar/_include/img/CMDdesignBy_92x55.jpg" id="ctrlDesignedBy_image" style="color:Transparent; height:22px;display:inline-block !important;" alt="CMDestudio®" />
+                        
+                        <!--EDITADO: añado descripción de enlace-->
+                        Visitar la página del desarrollador
+                    </a>                             
+                </div>   
+                  
+                              
+           
+                              
+                
+                
+                
+            </div>            
+            
+        </div>
+        
+
+
+
+
+
+
+        
+        
+        
+
+
+
+        
+
+    <script language="javascript" >
+        {
+            fnGBPWSSetInitialGuid();
+        }
+    </script>
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+    
+ 
+    
+    
+</body>
+
+ 
+
+</html>
