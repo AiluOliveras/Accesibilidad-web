@@ -1,0 +1,80 @@
+Informe respecto al archivo "EntregaAccesibilidadWeb2.html"
+
+La web a analizar es la siguiente:http://www.resinformatica.com.ar/LOGIN_ONLY/login-only/GlobalBluePoint-ERP.aspx
+Analizaremos concretamente la pestaña de login del sistema para demostrar que podriamos
+hacer una pestaña de formularios que sea accesible.
+
+En este caso los cambios realizados fueron los siguientes:
+(Estos pueden visualizarse en el archivo HTML también, realizando una busqueda
+que contenga el string 'EDITADO' para visualizar algunos de estos casos con mayor facilidad)
+
+1°) En varios casos hicimos uso del atributo alt para escribir un texto alternativo 
+para las imágenes, con el fin de que pueda entenderse el contexto de la página 
+con la misma facilidad para aquellos usuarios que no puedan visualizarlas.
+2°) Se añadieron descripciones de links de redirecciones (originalmente no las contenian).
+3°) Se agrandaron varias imágenes para que cumplan con el tamaño minimo recomendado por la wcag
+(16 px), aunque en realidad, la mejor manera de hacer el sitio mas accesible, es escribiendo
+en CSS el tamaño de las mismas en 'auto', o bien, generando la misma imagen
+en 3 tamaños distintos y cargarlas en base al tamaño de la ventana.
+Por ejemplo de la siguiente forma:
+<img srcset="foto_de_inicio.jpg 320w, 
+             foto_de_inicio.jpg 480w,
+             foto_de_inicio.jpg 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+    (...)
+
+4°) Corrección de textos alternativos que no describian claramente la operación que realizaba
+un determinado componente del html (Por ejemplo, se hace referencia a que en lugar de contener el texto 'Ir', se cambió
+por 'Dirigirse a la página x').
+5°) Se añadieron atributos 'keypress', para que puedan accederse a los elementos no solo usando el mouse, sino
+también utilizando el teclado.
+6°) Se aclaró el lenguaje de la pagina en el encabezado del html.
+7°) Se hicieron los links mas descriptivos.
+Por ejemplo, como mencionamos, el link analizado es:
+    www.resinformatica.com.ar/LOGIN_ONLY/login-only/GlobalBluePoint-ERP.aspx
+este link muestra el login del sistema, por lo tanto sería preferible que el link del
+mismo fuese por ejemplo: www.resinformatica.com.ar/Iniciar_sesion/
+
+
+En este caso al validar la página (luego de realizar los pasos anteriores) con la herramienta 'Simor',
+los errores que surgieron son:
+-Los formularios deben tener id's que no se repitan en ningun otro formulario.
+(Esto no altera la forma en que se percibe el sistema para el usuario, pero ayudaría a reducir la probabilidad
+de errores en el desarrollo y aportaría a la uniformidad del código y del sistema en si)
+-Como mencionamos, este validador destacó denuevo la idea de que es mejor hacer imágenes que sean
+responsive, en lugar de que posean una medida fija.
+
+
+
+Informe respecto al archivo "EntregaAccesibilidadWeb3.html"
+
+En este caso queremos analizar listados, para ello utilizaremos la misma página que en la parte 2
+de este trabajo, pero esta vez trabajaremos con la pestaña de 'ofertas'.
+http://www.resinformatica.com.ar/START_OFERTAS/ofertas/Todas%20las%20Ofertas%20estan%20aqui/GlobalBluePoint-ERP.aspx
+
+- alt  añadidos y editados(poco descriptivos)
+- se añade descripcion de imágenes que poseen redirecciones
+- Se mejoran las descripciones de los listados de categorias
+- Se añade atributo alt a imágenes 
+- se añadieron keypress
+- se establecieron tamaños minimos de imagenes
+En cuanto a los listados, sus componentes se encuentran en divs (y no en tablas), lo cual
+favorece a la accesibilidad. A su vez dentro de los mismos emplearon el uso de atributos <h1>/<h2>/ etc, lo cual
+ayuda a la mejor comprensión de la grilla.
+
+-Todos los links son poco claros respecto de su contexto.
+Para terminar de armar una página accesible, sería necesario alterar nuevamente (como mostramos
+en la 2da página), los links del html,los cuales en su mayoria se encuentran en las lineas 400-1000).
+
+Un ejemplo de como podemos mejorar todos estos links:
+(Original)
+http://www.resinformatica.com.ar/SUBCATEGORIA/SCAT_ID=3884/INALAMBRICOS/GlobalBluePoint-ERP.aspx">
+(Mejorado)
+http://www.resinformatica.com.ar/SUBCATEGORIA/INALAMBRICOS/
+
+Si a su vez quisiésemos mejorar aún mas la accesibilidad y permitirle al usuario primero visualizar
+el catálogo y luego las opciones de navegación, podriamos reestructurar la página para lograr
+esto último. En el archivo "EntregaAccesibilidadWeb3 (Ejemplo reestructurado).html", puede verse un ejemplo de como podría mejorarse este listado a fin de que
+el usuario pueda acceder a la información del mismo de manera mas rápida.

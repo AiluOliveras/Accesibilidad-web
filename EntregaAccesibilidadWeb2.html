@@ -409,8 +409,8 @@ function logono2() {
     
 <!-- START OF TOP_LOGO -->
 <div id="top_logo_mini">
-        <!--EDITADO: añado descripción del link-->
-        <a href="http://www.resinformatica.com.ar/HOME/inicio/GlobalBluePoint-ERP.aspx" target="_self"><img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/top-logo2.png" alt="RES INFORMATICA" /> </a>
+        <!--EDITADO: añado descripción del link, edito el link para hacerlo mas descriptivo (unicamente del href)-->
+        <a href="http://www.resinformatica.com.ar/HOME/" target="_self"><img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/top-logo2.png" alt="RES INFORMATICA" /> </a>
 </div>
 <!-- END OF TOP_LOGO -->
 
@@ -421,10 +421,10 @@ function logono2() {
     <div class="button-group">
 
         <!-- EDITADO: agrando tamaño de la imagen, no cumple con el tamaño
-        Agrego atributo alt a la imagen -->
-         <a class='light' title="Mis compras" href="http://www.resinformatica.com.ar/CHECKOUT/mycart/GlobalBluePoint-ERP.aspx"><img onload="logono2()" width="18" height="18" alt="Ingresar" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/cart_black.svg"/><ul><p id="contador">0</p></ul>Ingresar</a>
-        <!--EDITADO: agrando tamaños de imagen y alt-->
-         <div id="nolog1"><a class='light' title="Iniciar sesión" href="http://www.resinformatica.com.ar/LOGIN_ONLY/login-only/GlobalBluePoint-ERP.aspx"><img alt="Mi perfil" style="height: 16px; width: 16px" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/user_black.svg"/><ul>Ingresar</ul></a>
+        Agrego atributo alt a la imagen. Altero el link del href para ahcerlo mas descriptivo. -->
+         <a class='light' title="Mis compras" href="http://www.resinformatica.com.ar/MISCOMPRAS/"><img onload="logono2()" width="18" height="18" alt="Ingresar" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/cart_black.svg"/><ul><p id="contador">0</p></ul>Ingresar</a>
+        <!--EDITADO: agrando tamaños de imagen y alt, edito link del login-->
+         <div id="nolog1"><a class='light' title="Iniciar sesión" href="http://www.resinformatica.com.ar/INICIARSESION/"><img alt="Mi perfil" style="height: 16px; width: 16px" src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/user_black.svg"/><ul>Ingresar</ul></a>
          </div>
      <div id="log1">
 
@@ -459,12 +459,12 @@ function logono2() {
    </li>
 </ul>
 </form>
-
+<!-- Edito link de búsquedas para hacerlo mas descriptivo. -->
 <script>
 function fBuscador() {
     var STerm = document.getElementById("INPUT_BUSCADOR").value;
     
-window.location=("http://www.resinformatica.com.ar//SEARCHED/ST=" + STerm + "/GlobalBluePoint-ERP.aspx");
+window.location=("http://www.resinformatica.com.ar//BUSQUEDAS/ST=" + STerm + "/GlobalBluePoint-ERP.aspx");
 }
 </script>
 </div>
@@ -569,8 +569,9 @@ Si desea realizar un pedido, primero deberá solicitar su usuario y contraseña 
 
         <h4>Información</h4>
         <ul>
-            <li><a href="http://www.resinformatica.com.ar/ABOUT/nosotros/GlobalBluePoint-ERP.aspx">Nosotros</a></li>
-            <li><a href="http://www.resinformatica.com.ar/CONTACT/Message/GlobalBluePoint-ERP.aspx">Contacto</a></li>
+            <!-- EDITADO: cambio links para hacerlos mas descriptivos -->
+            <li><a href="http://www.resinformatica.com.ar/ACERCADENOSOTROS/">Nosotros</a></li>
+            <li><a href="http://www.resinformatica.com.ar/CONTACTO/">Contacto</a></li>
         </ul>
 
     </div>
@@ -584,8 +585,8 @@ Si desea realizar un pedido, primero deberá solicitar su usuario y contraseña 
 
         <ul class="footer_col1">
             <!--EDITADO: Agrando las imágenes para que cumplan con el tamaño minimo recomendado
-            Hago el texto alternativo mas descriptivo -->
-            <li> <a href="https://www.facebook.com/resinformaticalaplata/?ref=bookmarks/" target="_blank"><img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/facebook.svg" title="Visite nuestro Facebook" alt="Visite nuestro Facebook" style="height: 16px; width: 16px"/>Facebook</a> </li>
+            Hago el texto alternativo y el link mas descriptivo -->
+            <li> <a href="https://www.facebook.com/resinformaticalaplata/MARCADORES/" target="_blank"><img src="http://www.resinformatica.com.ar/Temp/App_WebSite/App_PictureFiles/facebook.svg" title="Visite nuestro Facebook" alt="Visite nuestro Facebook" style="height: 16px; width: 16px"/>Facebook</a> </li>
         </ul>
 
     </div>
@@ -597,7 +598,7 @@ Si desea realizar un pedido, primero deberá solicitar su usuario y contraseña 
 
         <h4>Regístrese</h4>
         <ul>
-            <li><a href="http://www.resinformatica.com.ar/LOGIN_ONLY/user/GlobalBluePoint-ERP.aspx">Iniciar sesión</a></li>
+            <li><a href="http://www.resinformatica.com.ar/REGISTRO">Registrese aquí</a></li>
 
         </ul>
 
@@ -625,7 +626,7 @@ Si desea realizar un pedido, primero deberá solicitar su usuario y contraseña 
 
     <div id="bottom_footer">
 
-<!-- START OF COPYRIGHT 
+<!-- START OF COPYRIGHT -->
 <div id="copyright">
 © Design by <a href="http://cmdestudio.com.ar/" target="_blank">CMDestudio</a> 
 </div>
